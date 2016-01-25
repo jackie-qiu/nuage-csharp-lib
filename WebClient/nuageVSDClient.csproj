@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.5\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -51,10 +55,15 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="nuageBase64.cs" />
+    <Compile Include="NuageDomain.cs" />
+    <Compile Include="NuageEnterprise.cs" />
     <Compile Include="NuageMe.cs" />
+    <Compile Include="NuagePolicyGroup.cs" />
+    <Compile Include="NuageRedirectionTarget.cs" />
+    <Compile Include="NuageSubnet.cs" />
     <Compile Include="nuageVSDSession.cs" />
+    <Compile Include="NuageZone.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="nuageHttpUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
