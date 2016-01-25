@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace nuageVSDClient
 {
-    public class Mes
-    {
-        public List<NuageMe> data {get;set;}
-    }
+
     public class NuageMe
     {
         public string firstName{get;set;}
