@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace nuageVSDClient
+namespace Nuage.VSDClient
 {
-    class NuagePolicyGroup
+    public class NuagePolicyGroup
     {
         public string children { get; set; }
         public string parentType { get; set; }

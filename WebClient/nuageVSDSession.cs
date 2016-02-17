@@ -10,9 +10,9 @@ using System.Security.Cryptography.X509Certificates;
 using log4net;
 using log4net.Config;
 
-namespace nuageVSDClient
+namespace Nuage.VSDClient
 {
-    class nuageVSDSession
+    public class nuageVSDSession
     {
         private static readonly ILog logger = LogManager.GetLogger(typeof(nuageVSDSession));
 
@@ -22,7 +22,7 @@ namespace nuageVSDClient
         private string token { get; set; }
         private Uri baseUrl { get; set; }
         private NuageMe[] mes { get; set; }
-        private NuageEnterprise[] enterprise { get; set; }
+        public  NuageEnterprise[] enterprise { get; set; }
         private NuageDomain[] domains { get; set; }
         private NuageZone[] zones { get; set; }
         private NuagePolicyGroup[] policyGroups { get; set; }
